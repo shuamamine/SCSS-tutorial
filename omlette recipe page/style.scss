@@ -14,6 +14,7 @@ $para:hsl(30, 10%, 34%);
 %flexbox{
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 body{
     @extend %flexbox;
@@ -23,7 +24,16 @@ body{
 .container{
     @extend %flexbox;
     align-items: center;
-    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    margin: 9rem;
+    border-radius: 20px;
+    background-color: white;
+}
+.image1 {
+  width: 97%;
+  padding: 4%;
+  border-radius: 50px;
 }
 .text
 {   
