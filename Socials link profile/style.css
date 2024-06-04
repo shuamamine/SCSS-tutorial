@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, .container, .image1, .text, .buttons {
+  display: flex;
+  align-items: center;
+}
+
+body, .container, .image1, .text {
+  justify-content: center;
+}
+
+.text h2, .text p, .buttons button {
+  font-weight: 600;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  font-family: "Inter", sans-serif;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 50px 20px 30px 0;
+}
+
+.container {
+  flex-direction: column;
+  background-color: hsl(0, 0%, 12%);
+  width: 100%;
+  max-width: 375px;
+  gap: 25px;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.image1 {
+  flex-direction: column;
+}
+
+img {
+  border-radius: 50%;
+  height: 88px;
+}
+
+.text {
+  flex-direction: column;
+}
+.text h2 {
+  color: white;
+  padding-bottom: 10px;
+}
+.text span {
+  color: white;
+  font-size: 14px;
+}
+.text p {
+  color: hsl(75, 94%, 57%);
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+
+.buttons {
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttons button {
+  width: 90%;
+  height: 45px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  color: white;
+}
+.buttons button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}/*# sourceMappingURL=style.css.map */

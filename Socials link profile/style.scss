@@ -1,0 +1,75 @@
+@use 'base';
+$font:"Inter", sans-serif;
+$bgcolor:hsl(0, 0%, 8%);
+$neon:hsl(75, 94%, 57%);
+$containerbg:hsl(0, 0%, 12%);
+$buttonbg:hsl(0, 0%, 20%);
+body {
+  @extend %flexbox;
+  @extend %jcc;
+  background-color: $bgcolor;
+  font-family: $font;
+  width: 100%;
+  height: max-content;
+  margin: 50px 20px 30px 0;
+}
+.container {
+  @extend %flexbox;
+  @extend %jcc;
+  flex-direction: column;
+  background-color: $containerbg;
+  width: 100%;
+  max-width: 375px;
+  gap: 25px;
+  padding: 2%;
+  border-radius: 20px;
+}
+.image1 {
+  @extend %flexbox;
+  flex-direction: column;
+  @extend %jcc;
+}
+img {
+  border-radius: 50%;
+  height: 88px;
+}
+.text {
+  @extend %flexbox;
+  flex-direction: column;
+  @extend %jcc;
+  h2 {
+    color: white;
+    @extend %fwt;
+    padding-bottom: 10px;
+  }
+  span {
+    color: white;
+    font-size: 14px;
+  }
+  p {
+    color: $neon;
+    padding-bottom: 20px;
+    @extend %fwt;
+    font-size: 14px;
+  }
+}
+.buttons {
+  @extend %flexbox;
+  justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  button {
+    width: 90%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: $buttonbg;
+    border: none;
+    color: white;
+    @extend %fwt;
+    &:hover {
+    background-color: $neon;
+    color: $buttonbg;
+  }
+  }
+  
+}
