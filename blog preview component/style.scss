@@ -7,6 +7,9 @@ $font:'Figtree', serif;
 @mixin width($w:100%){
     width: $w;
 }
+@mixin fwt($wt:500){
+    font-weight: $wt;
+}
 *{
     padding: 0;
     margin: 0;
@@ -15,10 +18,10 @@ $font:'Figtree', serif;
 %flexbox{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 body{
     @extend %flexbox;
+    align-items: center;
     background-color: $yellow;
     font-family: $font;
     padding: 5%;
@@ -26,6 +29,7 @@ body{
 }
 .container{
     @extend %flexbox;
+    align-items: center;
     flex-direction: column;
     @include width;
     max-width: 400px;
@@ -43,8 +47,53 @@ body{
     border-radius:15px;
    }
 }
+.textbox{
+    @extend %flexbox;
+    flex-direction: column;
+    text-align: left;
+ gap: 20px;
+    margin-top: 20px;   
+    p{
+        @include fwt;
+    }
+    span{
+        color: $grey;
+    }
+}
+
 .learning{
     @extend %flexbox;
+    align-items: center;
     background-color: $yellow;
+    color: $black;
+    @include width($w:max-content);
+    padding: 10px;
+    height: 30px;
+    border-radius: 7px;
+    @include fwt($wt:800);
+}
+#a{
+    font-size: 25px;
+    @include fwt($wt:800);
     
+    &:hover{
+        color: $yellow;
+        cursor: pointer;
+    }
+}
+.author{
+    @extend %flexbox;
+    gap: 1rem;
+    margin-right: auto;
+}
+.avatar 
+{img{
+    @include width($w:35px);
+    height: 35px;
+    justify-content: center;
+}}
+.name{
+    justify-content: center;
+    align-items: center;
+    @include fwt($wt:800);
 }
