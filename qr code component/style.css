@@ -41,9 +41,11 @@ img {
   margin: 3px;
   word-spacing: 3px;
   color: hsl(218, 44%, 22%);
+  font-family: "Outfit", sans-serif;
 }
 .textbox p {
   padding: 15px 10px 30px;
   word-spacing: 7px;
   color: hsl(220, 15%, 55%);
+  font-family: "Outfit", sans-serif;
 }/*# sourceMappingURL=style.css.map */
