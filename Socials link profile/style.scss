@@ -1,4 +1,9 @@
 @use 'base';
+@mixin test($col:white, $pdbt:10px){
+    color:$col;
+    @extend %fwt;
+    padding-bottom: $pdbt;
+}
 $font:"Inter", sans-serif;
 $bgcolor:hsl(0, 0%, 8%);
 $neon:hsl(75, 94%, 57%);
@@ -38,9 +43,7 @@ img {
   flex-direction: column;
   @extend %jcc;
   h2 {
-    color: white;
-    @extend %fwt;
-    padding-bottom: 10px;
+    @include test;
   }
   span {
     color: white;
@@ -58,8 +61,9 @@ img {
   justify-content: space-evenly;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
   button {
-    width: 90%;
+    width: 100%;
     height: 45px;
     border-radius: 10px;
     background-color: $buttonbg;
