@@ -6,11 +6,12 @@ $prep:hsl(330, 100%, 98%);
 $preplist:  hsl(332, 51%, 32%);
 $otherheading: hsl(14, 45%, 36%);
 $para:hsl(30, 10%, 34%);
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+@import "../test/test.scss";
 %flexbox{
     display: flex;
     justify-content: center;

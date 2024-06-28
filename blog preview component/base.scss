@@ -10,11 +10,12 @@ $font:'Figtree', serif;
 @mixin fwt($wt:500){
     font-weight: $wt;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
+@import "../test/test.scss";
 %flexbox{
     display: flex;
     justify-content: center;
